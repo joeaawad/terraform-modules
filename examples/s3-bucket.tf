@@ -1,5 +1,5 @@
 module "s3-bucket-example" {
-  # source = "git@github.com:joeaawad/terraform-modules.git//s3/bucket?ref=master"
+  # source = "git@github.com:joeaawad/terraform-modules.git//s3/bucket?ref=<ref>"
   source = "../s3/bucket"
 
   name = "example-name"
@@ -11,7 +11,7 @@ module "s3-bucket-example" {
 }
 
 module "s3-bucket-example-all-variables" {
-  # source = "git@github.com:joeaawad/terraform-modules.git//s3/bucket?ref=master"
+  # source = "git@github.com:joeaawad/terraform-modules.git//s3/bucket?ref=<ref>"
   source = "../s3/bucket"
 
   name = "example-name-all-variables"
@@ -66,7 +66,7 @@ module "s3-bucket-example-all-variables" {
 }
 
 module "s3-bucket-example-only-current-version-lifecycle-rules" {
-  # source = "git@github.com:joeaawad/terraform-modules.git//s3/bucket?ref=master"
+  # source = "git@github.com:joeaawad/terraform-modules.git//s3/bucket?ref=<ref>"
   source = "../s3/bucket"
 
   name = "example-name-only-current-version-lifecycle-rules"

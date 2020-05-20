@@ -11,7 +11,7 @@ data "aws_iam_policy_document" "iam-service-role-example-role-managed-policy" {
 }
 
 module "iam-service-role-example" {
-  # source = "git@github.com:joeaawad/terraform-modules.git//iam/service-role?ref=master"
+  # source = "git@github.com:joeaawad/terraform-modules.git//iam/service-role?ref=<ref>"
   source = "../iam/service-role"
 
   name = "example-name"
