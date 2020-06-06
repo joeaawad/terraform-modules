@@ -22,12 +22,12 @@ resource "aws_iam_role_policy" "policy" {
 
   name   = each.key
   policy = each.value
-  role   = aws_iam_role.role.arn
+  role   = aws_iam_role.role.name
 }
 
 resource "aws_iam_role_policy_attachment" "policy" {
   for_each = toset(var.existing_policies)
 
   policy_arn = each.value
-  role       = aws_iam_role.role.arn
+  role       = aws_iam_role.role.name
 }
