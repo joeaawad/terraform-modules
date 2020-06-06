@@ -23,4 +23,7 @@ Create a private s3 bucket with default encryption enabled.
 
 ## Outputs
 
-No output.
+| Name | Description |
+|------|-------------|
+| arn | n/a |
+| id | n/a |
